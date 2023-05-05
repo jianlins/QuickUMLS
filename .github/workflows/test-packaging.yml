@@ -47,6 +47,7 @@ jobs:
         pip install -r requirements.txt
         python setup.py install
     - name: runtests
+      run: |
         pytest tests/test_quickumls_spangroup.py
         pytest tests/test_quickumls_component.py
     - name: Build package
